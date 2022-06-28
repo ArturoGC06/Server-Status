@@ -1,0 +1,68 @@
+.body {
+    cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
+.logo {
+    width: 300px;
+}
+
+.tablea {
+    margin-top: 45px;
+    background-color: #242b3f;
+    padding: 2400px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 2px 9px 9px rgba(0, 0, 0, 0.103);
+}
+
+th{
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    color: rgb(206, 206, 206);
+}
+
+tr{
+    padding-left: 10px;
+    
+}
+
+.bot {
+    text-decoration: underline;
+    text-decoration: none;
+    color:aliceblue;
+}
+
+a:link {
+    text-decoration: none;
+    color:aliceblue;
+}
+
+td {
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: rgb(206, 206, 206);
+    border: none;
+}
+
+.loading{
+    margin-top: 90px;
+}
+
+.logo{
+    width: 300px;
+}
+
+.inicio {
+    background-color: black;
+}
+
+.barra {
+    width: 300px;
+    margin-top: 70px;
+}
+
+.loading {
+    margin-top: 170px;
+}

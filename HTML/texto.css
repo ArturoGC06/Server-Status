@@ -1,0 +1,58 @@
+.cuadroip{
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+input {
+  background-color: #B3dff7;
+  color: #000000;
+  padding: 8px;
+  margin:10px 0px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+
+select {
+  
+  background-color: #B3dff7;
+  padding: 8px;
+  margin:10px 0px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+
+.busqueda{
+	padding-left: 765px;
+	position: absolute;
+  right: 0px;
+  width: 300px;
+    padding: 8px;
+  margin:10px 0px;	
+}
+
+.bg-azul{
+	background-color: #242b3f;
+}
+
+.textobuscar{
+  background-color: #E3ecf3;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  border-radius:10px;
+  padding-right: 0px;
+}
+
+.enter {
+	border-radius:10px;
+	padding-left:10px;
+	/*background-image: url("https://icons.getbootstrap.com/assets/icons/search.svg");*/
+}
+
+.navegacion {
+  box-shadow: 4px 4px 10px 8px rgba(0,0,0,0.06);	
+}
+
+button{
+  border-radius:1px;
+}
