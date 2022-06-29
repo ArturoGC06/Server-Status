@@ -41,12 +41,13 @@
 
           <div class="d-flex row col-md-3 ml-md-auto busqueda">
            <input class="textobuscar col" id="bsearch" type="search" placeholder="Buscar" aria-label="Search">
-           <button onclick="search(event)" class="btn enter" type="submit">Buscar</button>
          
           </div>
       </div>
     </div>
-</nav>    <br>
+	<button onclick="search(event)" class="btn enter" type="submit" id="searchb"><i class="bi bi-search"></i></button>
+</nav>    
+	<br>
     <br>
 	<p class="frase">Comprobación del estado del servidor</p>
 	<div class="posiciondiv">
@@ -109,5 +110,15 @@
       </div>
     </div>
   </footer>
+  	<script>
+		var input = document.getElementById("bsearch");
+		input.addEventListener("keyup", function(event){
+			if (event.keyCode===13) {
+				event.preventDefault();
+				document.getElementById("searchb").click()
+			}
+		})
+
+	</script>
 </body>
 </html>
