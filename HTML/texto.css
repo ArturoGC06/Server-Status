@@ -22,14 +22,6 @@ select {
   border-radius:10px;
 }
 
-.busqueda{
-	padding-left: 765px;
-	position: absolute;
-  right: 0px;
-  width: 300px;
-    padding: 8px;
-  margin:10px 0px;	
-}
 
 .bg-azul{
 	background-color: #242b3f;
@@ -43,16 +35,40 @@ select {
   padding-right: 0px;
 }
 
-.enter {
-	border-radius:10px;
-	padding-left:10px;
-	/*background-image: url("https://icons.getbootstrap.com/assets/icons/search.svg");*/
-}
+
 
 .navegacion {
   box-shadow: 4px 4px 10px 8px rgba(0,0,0,0.06);	
 }
 
-button{
-  border-radius:1px;
+.enviar{
+  border-radius:10px;
+  background-color: #B3dff7;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.8s ease-out;
+}
+
+.enviar:hover{
+  color:#ffffff;
+  background-color: #242b3f;
+}
+
+.enter{
+  border-radius:10px;
+  background-color: #B3dff7;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.4s ease-out;
+}
+
+.enter:hover{
+  color:#000000;
+  background-color: #2bed5f;
 }
