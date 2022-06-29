@@ -73,3 +73,7 @@ select {
   color:#000000;
   background-color: #2bed5f;
 }
+
+.slide img{
+  height: 100vh;
+}
