@@ -1,5 +1,5 @@
 function search (event) {
-	var busqueda = document.getElementById("search").value
+	var busqueda = document.getElementById("bsearch").value
 	console.log(busqueda)
 	if (busqueda.toLowerCase() == "info"){
 		console.log("Redirect info.html")

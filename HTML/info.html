@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./texto.css">
 	<link rel="stylesheet" type="text/css" href="./imgtab.css">
 	<script src="./info.js" type="text/javascript"></script>
+	<script src="./status.js" type="text/javascript"></script>
 </head>
 <body style="background:#E3ecf3	">
 
@@ -34,8 +35,8 @@
       		</ul>
 
       		<div class="d-flex row col-md-3 ml-md-auto busqueda">
-     		   <input class="textobuscar col" type="search" placeholder="Buscar" aria-label="Search">
-     		   <button class="btn enter" type="submit">Buscar</button>
+     		   <input class="textobuscar col" type="search" placeholder="Buscar" aria-label="Search" id="bsearch">
+     		   <button onclick="search(event)" class="btn enter" type="submit">Buscar</button>
      		 
       		</div>
     	</div>
