@@ -82,3 +82,8 @@ select {
 .slide img{
   height: 100vh;
 }
+.logonav{
+  width: 4%;
+  height: 4%;
+  padding-right: 10px;
+}
