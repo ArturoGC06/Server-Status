@@ -1,11 +1,35 @@
 body.claro{
+	-webkit-transition: background-color 0.35s ease-out;
 	background-color:#E3ecf3;
 }
-
+p.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+ul.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+label.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
 body.oscuro{
+	-webkit-transition: background-color 0.35s ease-out;
 	background-color:#2A2A2A;
 }
-
+p.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+ul.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+label.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
 body {
 	font-family: Montserrat
 }
@@ -21,7 +45,6 @@ input {
 }
 
 select {
-  
   background-color: #B3dff7;
   padding: 8px;
   margin:10px 0px;
@@ -30,7 +53,9 @@ select {
   border-radius:10px;
 }
 
-
+.cambiartema{
+	margin-left: 14px;
+}
 .bg-azul{
 	background-color: #242b3f;
 }
@@ -42,8 +67,6 @@ select {
   border-radius:10px;
   padding-right: 0px;
 }
-
-
 
 .navegacion {
   box-shadow: 4px 4px 10px 8px rgba(0,0,0,0.06);	

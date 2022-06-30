@@ -1,10 +1,22 @@
 function tema(event){
 	if( $( "body" ).hasClass( "claro" )) {
       $( "body" ).removeClass( "claro" );
-	  $( "body" ).addClass( "oscuro" ).fadeOut;
+	  $( "body" ).addClass( "oscuro" );
+	  $( "p" ).removeClass( "claro" );
+	  $( "p" ).addClass( "oscuro" );
+	  $( "ul" ).removeClass( "claro" );
+	  $( "ul" ).addClass( "oscuro" );
+	  $( "label" ).removeClass( "claro" );
+	  $( "label" ).addClass( "oscuro" );
     } else {
       $( "body" ).removeClass( "oscuro" );
-		$( "body" ).addClass( "claro" ).fadeOut;
+		$( "body" ).addClass( "claro" );
+      $( "p" ).removeClass( "oscuro" );
+		$( "p" ).addClass( "claro" );
+      $( "ul" ).removeClass( "oscuro" );
+		$( "ul" ).addClass( "claro" );
+      $( "label" ).removeClass( "oscuro" );
+		$( "label" ).addClass( "claro" );
 	}
 }
 
