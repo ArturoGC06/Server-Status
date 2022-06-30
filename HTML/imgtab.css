@@ -66,3 +66,20 @@ td {
 .loading {
     margin-top: 170px;
 }
+
+.enviar{
+  border-radius:10px;
+  background-color: #B3dff7;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.8s ease-out;
+}
+
+.enviar:hover{
+  color:#ffffff;
+  background-color: #242b3f;
+}
+
