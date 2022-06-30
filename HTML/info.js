@@ -7,6 +7,7 @@ function tema(event){
 		$( "body" ).addClass( "claro" ).fadeOut;
 	}
 }
+
 function sendMail(event) {
 	var name = document.getElementById('mails').value
 		if (name=='Arturo') {
