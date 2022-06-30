@@ -33,3 +33,7 @@ function correctip (event) {
 		return true;
 	}
 }
+
+function botonentrar (event) {
+	window.location.href = "./login.html";
+}
