@@ -8,6 +8,8 @@ function tema(event){
 	  $( "ul" ).addClass( "oscuro" );
 	  $( "label" ).removeClass( "claro" );
 	  $( "label" ).addClass( "oscuro" );
+	  $( "h1" ).removeClass( "claro" );
+	  $( "h1" ).addClass( "oscuro" );
     } else {
       $( "body" ).removeClass( "oscuro" );
 		$( "body" ).addClass( "claro" );
@@ -17,6 +19,8 @@ function tema(event){
 		$( "ul" ).addClass( "claro" );
       $( "label" ).removeClass( "oscuro" );
 		$( "label" ).addClass( "claro" );
+      $( "h1" ).removeClass( "oscuro" );
+		$( "h1" ).addClass( "claro" );
 	}
 }
 
@@ -31,17 +35,4 @@ function sendMail(event) {
 		if (name=='Ignacio') {
 		 window.location.href = "mailto:Ignacio@gmail.com";
 	}
-}
-
-function comprobarip(event) {
-		var ip = document.getElementById('ip').value.split('.')
-		if (ip.length == 4){
-			for (var i = 0; i < ip.length;i++) {
-			var ipd = parseInt(ip[i]);
-			if ((ipd > 255) || (ipd < 0)) {
-				console.log("No es váildo")
-				return false
-			}
-			}
-		}
 }
