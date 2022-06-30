@@ -35,5 +35,5 @@ function correctip (event) {
 }
 
 function botonentrar (event) {
-	window.location.href = "./info.html";
+	window.location.href = "./login.html";
 }
