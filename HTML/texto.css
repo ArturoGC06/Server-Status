@@ -57,7 +57,7 @@ select {
   box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
   cursor: pointer;
   position: relative;
-  -webkit-transition: background-color 0.8s ease-out;
+  -webkit-transition: background-color 0.6s ease-out;
 }
 
 .enviar:hover{
@@ -75,7 +75,7 @@ select {
   box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
   cursor: pointer;
   position: relative;
-  -webkit-transition: background-color 0.4s ease-out;
+  -webkit-transition: background-color 0.3s ease-out;
 }
 
 .enter:hover{
