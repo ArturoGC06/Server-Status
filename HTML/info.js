@@ -1,3 +1,12 @@
+function tema(event){
+	if( $( "body" ).hasClass( "claro" )) {
+      $( "body" ).removeClass( "claro" );
+	  $( "body" ).addClass( "oscuro" ).fadeOut;
+    } else {
+      $( "body" ).removeClass( "oscuro" );
+		$( "body" ).addClass( "claro" ).fadeOut;
+	}
+}
 function sendMail(event) {
 	var name = document.getElementById('mails').value
 		if (name=='Arturo') {

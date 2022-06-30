@@ -1,5 +1,9 @@
-.cuadroip{
+body.claro{
+	background-color:#E3ecf3;
+}
 
+body.oscuro{
+	background-color:#2A2A2A;
 }
 
 body {
