@@ -24,6 +24,10 @@ function tema(event){
 	}
 }
 
+function botonentrar (event) {
+	window.location.href = "./login.html";
+}
+
 function sendMail(event) {
 	var name = document.getElementById('mails').value
 		if (name=='Arturo') {
