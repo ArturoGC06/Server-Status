@@ -1,5 +1,5 @@
 body.claro{
-	-webkit-transition: background-color 0.7s ease-out;
+	-webkit-transition: background-color 0.35s ease-out;
 	background-color:#E3ecf3;
 }
 p.claro{
@@ -118,4 +118,18 @@ select {
   width: 4%;
   height: 4%;
   padding-right: 10px;
+}
+
+.cuadro {
+  font-size: 20px;
+  margin-top: 14%;
+  background-color: #ffffff;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  border-radius: 15px;
+
 }
