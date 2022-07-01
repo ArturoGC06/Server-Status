@@ -13,23 +13,25 @@
 } */
 
 function comprobarip(event) {
+		var ipUrl = document.getElementById('ip').value //.split('.')	
 		var ip = document.getElementById('ip').value.split('.')
-		var ipUrl = document.getElementById('ip').value
-		
-		if (ipUrl = /[a-zA-Z]/){
-			console.log('Es una Url')
+		if (ipUrl.match(/[a-z]/i)){
+			console.log('Url')
 		}
-		if (ip.length == 4 && ip != /[a-zA-Z]/){
+		else if (ip.length == 4){
 			for (var i = 0; i < ip.length;i++) {
 				var ipd = parseInt(ip[i]);
 				console.log("Es válido")
+				var ipcomp = String(ipd);
+				ipcomp = "http://" + ipcomp;
+				
+				
 			if ((ipd > 255) || (ipd < 0)) {
 				console.log("No es váildo")
 				return false
 			}
-			}
+		  }
 		}
-	
 }
 
 function search (event) {
@@ -58,6 +60,7 @@ function search (event) {
 }
  
 
+/*
 function pingURL() {
 
 // The custom URL entered by user
@@ -105,6 +108,6 @@ var settings = {
 		console.log("Page is down")
 	}
 
-}
+} */
 
 
