@@ -1,0 +1,135 @@
+body.claro{
+	-webkit-transition: background-color 0.35s ease-out;
+	background-color:#E3ecf3;
+}
+p.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+ul.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+label.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+h1.claro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #000000;
+}
+body.oscuro{
+	-webkit-transition: background-color 0.35s ease-out;
+	background-color:#2A2A2A;
+}
+p.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+ul.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+label.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+h1.oscuro{
+	-webkit-transition: background-color 0.45s ease-out;
+	color: #E0E0E0;
+}
+body {
+	font-family: Montserrat
+}
+
+input {
+  background-color: #B3dff7;
+  color: #000000;
+  padding: 8px;
+  margin:10px 0px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+
+select {
+  background-color: #B3dff7;
+  padding: 8px;
+  margin:10px 0px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  border-radius:10px;
+}
+
+.cambiartema{
+	margin-left: 14px;
+}
+.bg-azul{
+	background-color: #242b3f;
+}
+
+.textobuscar{
+  background-color: #E3ecf3;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  border-radius:10px;
+  padding-right: 0px;
+}
+
+.navegacion {
+  box-shadow: 4px 4px 10px 8px rgba(0,0,0,0.06);	
+}
+
+.enviar{
+  border-radius:10px;
+  background-color: #B3dff7;
+  padding: 8px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.6s ease-out;
+}
+
+.enviar:hover{
+  color:#ffffff;
+  background-color: #242b3f;
+}
+
+.enter{
+  border-radius:10px;
+  background-color: #B3dff7;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 0px solid #75d0c3;
+  box-shadow: 4px 4px 15px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease-out;
+}
+
+.enter:hover{
+  color:#000000;
+  background-color: #2bed5f;
+}
+
+.logonav{
+  width: 4%;
+  height: 4%;
+  padding-right: 10px;
+}
+
+.cuadro {
+  font-size: 20px;
+  margin-top: 14%;
+  background-color: #ffffff;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+  border-radius: 15px;
+
+}
