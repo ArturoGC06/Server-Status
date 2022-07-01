@@ -12,13 +12,13 @@ window.onload = async function inicio(event) {
 	console.log('Aqui tb') */
 	var ocultar = document.getElementById('principal')
 	ocultar.style.visibility = 'hidden';
+	document.body.style.overflow = 'hidden'
 	$( "body" ).removeClass( "claro" );
 	$( "body" ).addClass( "oscuro" );
 
 	
 	for (var i = 0 ; i < 100; i++) {
 		var seconds = 0;
-		
 		window.scrollTo(0, 0)
 		await sleep(60);
 		var bar = document.getElementById('pgbar').style.width
@@ -31,13 +31,7 @@ window.onload = async function inicio(event) {
 	await sleep(140);
 	document.getElementById('welcome').remove()
 	ocultar.style.visibility = 'visible';
+	document.body.style.overflow = 'visible'
 	$( "body" ).removeClass( "oscuro" );
 	$( "body" ).addClass( "claro" );
-	/* const ocultarpcarga = document.getElementsByClassName('iniciobar')[0];
-	ocultar.style.visibility = 'hidden'; 
-
-	
-
-	ocultarinicio.style.visibility = 'show' */
-
 }

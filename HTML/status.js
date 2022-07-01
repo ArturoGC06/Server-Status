@@ -1,4 +1,4 @@
-function comprobarip(event) {
+/* function comprobarip(event) {
 		var ip = document.getElementById('ip').value.split('.')
 		if (ip.length == 4){
 			for (var i = 0; i < ip.length;i++) {
@@ -10,7 +10,7 @@ function comprobarip(event) {
 			}
 		}
 		console.log("Es válido")
-}
+} */
 
 function search (event) {
 	var busqueda = document.getElementById("bsearch").value
@@ -21,7 +21,7 @@ function search (event) {
 	}
 		if (busqueda.toLowerCase() == "inicio"){
 		console.log("Redirect Index.html")
-		window.location.href = "./Index.html";
+		window.location.href = "./inicio.html";
 	}
 		if (busqueda.toLowerCase() == "status"){
 		console.log("Redirect status.html")
@@ -36,7 +36,7 @@ function search (event) {
 		window.location.href = "./info.html";
 	}
 }
-
+/*
 function correctip (event) {
 	var ip = document.getElementById("search").value
 	var ipArr = ip.split('.');
@@ -54,5 +54,46 @@ function correctip (event) {
 		console.log("Ip correcta")
 		return true;
 	}
+}  */
+
+function pingURL() {
+
+// The custom URL entered by user
+var URL = $("#url").val();
+var settings = {
+
+	// Defines the configurations
+	// for the request
+	cache: false,
+	dataType: "jsonp",
+	async: true,
+	crossDomain: true,
+	url: URL,
+	method: "GET",
+	headers: {
+	accept: "application/json",
+	"Access-Control-Allow-Origin": "*",
+	},
+
+	// Defines the response to be made
+	// for certain status codes
+	statusCode: {
+	200: function (response) {
+		console.log("Status 200: Page is up!");
+	},
+	400: function (response) {
+		console.log("Status 400: Page is down.");
+	},
+	0: function (response) {
+		console.log("Status 0: Page is down.");
+	},
+	},
+};
+
+// Sends the request and observes the response
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
 }
+
 
