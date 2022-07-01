@@ -12,6 +12,26 @@
 		console.log("Es válido")
 } */
 
+function comprobarip(event) {
+		var ip = document.getElementById('ip').value.split('.')
+		var ipUrl = document.getElementById('ip').value
+		
+		if (ipUrl = /[a-zA-Z]/){
+			console.log('Es una Url')
+		}
+		if (ip.length == 4 && ip != /[a-zA-Z]/){
+			for (var i = 0; i < ip.length;i++) {
+				var ipd = parseInt(ip[i]);
+				console.log("Es válido")
+			if ((ipd > 255) || (ipd < 0)) {
+				console.log("No es váildo")
+				return false
+			}
+			}
+		}
+	
+}
+
 function search (event) {
 	var busqueda = document.getElementById("bsearch").value
 	console.log(busqueda)
@@ -36,24 +56,7 @@ function search (event) {
 		window.location.href = "./info.html";
 	}
 }
-
-function correctip (event) {
-	var ip = document.getElementById("search").value
-	var ipArr = ip.split('.');
-	console.log(ipArr)
-	console.log(ipArr.length);
-	if (ipArr.length == 4){
-		for (var i = 0; i < ipArr.length; i++){
-			console.log(ipArr[i])
-			if (parseInt(ipArr[i])>256 || parseInt(ipArr[i])<0) {
-				console.log("Incorrecto")
-				return false;
-			}
-		}
-		console.log("Ip correcta")
-		return true;
-	}
-}  
+ 
 
 function pingURL() {
 
