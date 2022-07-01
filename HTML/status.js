@@ -36,14 +36,13 @@ function search (event) {
 		window.location.href = "./info.html";
 	}
 }
-/*
+
 function correctip (event) {
 	var ip = document.getElementById("search").value
 	var ipArr = ip.split('.');
 	console.log(ipArr)
 	console.log(ipArr.length);
 	if (ipArr.length == 4){
-
 		for (var i = 0; i < ipArr.length; i++){
 			console.log(ipArr[i])
 			if (parseInt(ipArr[i])>256 || parseInt(ipArr[i])<0) {
@@ -54,7 +53,7 @@ function correctip (event) {
 		console.log("Ip correcta")
 		return true;
 	}
-}  */
+}  
 
 function pingURL() {
 
@@ -80,20 +79,29 @@ var settings = {
 	statusCode: {
 	200: function (response) {
 		console.log("Status 200: Page is up!");
+		window.alert('La pagina esta operativa')
 	},
 	400: function (response) {
 		console.log("Status 400: Page is down.");
+		window.alert('La pagina esta caida')	
 	},
 	0: function (response) {
-		console.log("Status 0: Page is down.");
+		console.log("Status 0: Page is down.")
+		window.alert('La pagina no existe');
 	},
 	},
 };
 
 // Sends the request and observes the response
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
+	try{
+		$.ajax(settings).done(function (response) {
+			console.log(response);
+		});
+	}
+	catch(error){
+		console.log("Page is down")
+	}
+
 }
 
 
