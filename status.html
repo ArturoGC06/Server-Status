@@ -68,10 +68,9 @@
 	<div align="center">
 		<label>Dirección del servidor</label>
 		<br>
-		<input id="ip" placeholder="Introduce una url">
-		<button onclick="comprobarip(event)" class="enviar">Comprobar</button>
-    <input id="url" type="" name="" placeholder="URL">
-    <button onclick="pingURL()" class="enviar">Comprobar</button>
+		<input id="ip" placeholder="Introduce una url o ip">
+		<br>
+		<button id="ping" onclick="comprobarip(event)" class="enviar">Comprobar</button>
 	</div>
   <br>
   <br>
@@ -123,6 +122,13 @@
 			if (event.keyCode===13) {
 				event.preventDefault();
 				document.getElementById("searchb").click()
+			}
+		})
+		var inputUrl = document.getElementById("ip");
+		inputUrl.addEventListener("keyup", function(event){
+			if (event.keyCode===13) {
+				event.preventDefault();
+				document.getElementById("ping").click()
 			}
 		})
 
