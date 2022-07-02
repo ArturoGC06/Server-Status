@@ -62,8 +62,9 @@ select {
 }
 
 .cambiartema{
-	margin-left: 14px;
+margin-left: 11px;
 }
+
 .bg-azul{
 	background-color: #242b3f;
 }
@@ -74,6 +75,7 @@ select {
   border: 0px solid #75d0c3;
   border-radius:10px;
   padding-right: 0px;
+	width: 100%;
 }
 
 .navegacion {
@@ -131,5 +133,8 @@ select {
   padding-top: 3%;
   padding-bottom: 4%;
   border-radius: 15px;
+}
 
+.busqueda{
+	width: 100%;
 }
