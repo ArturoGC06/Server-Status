@@ -10,7 +10,16 @@
 			}
 		}
 	console.log("Es válido")
+	window.setTimeout(function(){
+	}, 30);
 } */
+ 
+window.onload = function info(event){
+	$("#alerta-error").hide();
+	$("#alerta-error-ip").hide();
+	$("#alerta-funciona").hide();
+	$('#alerta-info').hide();	
+	} 
 
 function comprobarip(event) {
 		var ipUrl = document.getElementById('ip').value //.split('.')	
@@ -33,15 +42,21 @@ function comprobarip(event) {
 				statusCode: {
 				200: function (response) {
 					console.log("Status 200: Page is up!");
-					window.alert('La pagina esta operativa')
+					$("#alerta-funciona").fadeTo(2000, 500).slideUp(500, function(){
+					$("#alerta-funciona").slideUp(500);	
+				   });
 				},
 				404: function (response) {
 					console.log("Status 400: Page is down.");
-					window.alert('La pagina esta caida o no existe')	
+					$("#alerta-error").fadeTo(2000, 500).slideUp(500, function(){
+					$("#alerta-error").slideUp(500);	
+				  });
 				},
 				0: function (response) {
 					console.log("Status 0: Page is down.")
-					window.alert('La pagina no existe');
+					$("#alerta-error").fadeTo(2000, 500).slideUp(500, function(){
+					$("#alerta-error").slideUp(500);	
+				  });
 				},
 				},
 			}; 
@@ -59,14 +74,20 @@ function comprobarip(event) {
 			
 		if (ip.length == 4){
 			for (var i = 0; i < ip.length;i++) {
-				var ipd = parseInt(ip[i]);
-				console.log("Es válido")
+				var ipd = parseInt(ip[i]);    
 				if ((ipd > 255) || (ipd < 0)) {
 					console.log("No es váildo")
-					return false
+					$("#alerta-error-ip").fadeTo(2000, 500).slideUp(500, function(){
+					$("#alerta-error-ip").slideUp(500);	
+				  });
+					return false;
 				}
-			//	var ipcomp = String(ipd);
-				}
+				console.log("Es válido")
+				$("#alerta-info").fadeTo(2000, 500).slideUp(500, function(){
+				$("#alerta-info").slideUp(500);	
+			      });
+				 }
+				
 			var urlnum = document.getElementById('ip').value
 				urlnum = "http://" + urlnum;
 				var settingsnum = {
@@ -89,15 +110,21 @@ function comprobarip(event) {
 					statusCode: {
 					200: function (responsenum) {
 						console.log("Status 200: Page is up!");
-						window.alert('La pagina esta operativa')
+						$("#alerta-funciona").fadeTo(2000, 500).slideUp(500, function(){
+					    $("#alerta-funciona").slideUp(500);	
+				     });
 					},
 					404: function (responsenum) {
 						console.log("Status 400: Page is down.");
-						window.alert('La pagina esta caida o no existe')	
+						$("#alerta-error").fadeTo(2000, 500).slideUp(500, function(){ //cuadrado de info
+					    $("#alerta-error").slideUp(500);	
+				     });
 					},
 					0: function (responsenum) {
 						console.log("Status 0: Page is down.")
-						window.alert('La pagina no existe');
+						$("#alerta-error").fadeTo(2000, 500).slideUp(500, function(){
+					    $("#alerta-error").slideUp(500);	
+				     });
 					},
 					}, 
 				}; 
@@ -111,8 +138,13 @@ function comprobarip(event) {
 					catch(error){
 						console.log("Page is down")
 					}
+				}
+					else{
+						$("#alerta-error-ip").fadeTo(2000, 500).slideUp(500, function(){
+						$("#alerta-error-ip").slideUp(500);
+						});
+						}
 			}					 
-		}
 
 
 function search (event) {
