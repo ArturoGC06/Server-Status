@@ -1,50 +1,3 @@
-body.claro{
-	-webkit-transition: background-color 0.35s ease-out;
-	background-color:#E3ecf3;
-}
-body.claro-auto{
-	background-color:#E3ecf3;
-}
-p.claro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #000000;
-}
-ul.claro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #000000;
-}
-label.claro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #000000;
-}
-h1.claro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #000000;
-}
-body.oscuro{
-	-webkit-transition: background-color 0.35s ease-out;
-	background-color:#2A2A2A;
-}
-body.oscuro-auto{
-	background-color:#2A2A2A;
-}
-p.oscuro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #E0E0E0;
-}
-ul.oscuro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #E0E0E0;
-}
-label.oscuro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #E0E0E0;
-}
-h1.oscuro{
-	-webkit-transition: background-color 0.45s ease-out;
-	color: #E0E0E0;
-}
-
 body {
 	font-family: Montserrat
 }
@@ -138,4 +91,8 @@ margin-left: 11px;
 
 .busqueda{
 	width: 100%;
+}
+
+.inicio{
+	height: 500px;
 }
