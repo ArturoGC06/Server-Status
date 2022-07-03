@@ -69,7 +69,7 @@ function comprobarip(event) {
 				catch(error){
 					console.log("Page is down")
 				} 
-
+			return true;
 			} 
 			
 		if (ip.length == 4){
